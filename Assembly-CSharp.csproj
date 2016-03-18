@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{26D81EA8-7506-8CC2-6A99-511CC2E656BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Attacker.cs" />
+     <Compile Include="Assets\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Scripts\BuyUnitButton.cs" />
+     <Compile Include="Assets\Scripts\BuyUnitConfig.cs" />
+     <Compile Include="Assets\Scripts\BuyUnitMenu.cs" />
+     <Compile Include="Assets\Scripts\BuyUnitStatus.cs" />
+     <Compile Include="Assets\Scripts\DamageInfo.cs" />
+     <Compile Include="Assets\Scripts\Dimmer.cs" />
+     <Compile Include="Assets\Scripts\Factions\EnemyFaction.cs" />
+     <Compile Include="Assets\Scripts\Factions\Faction.cs" />
+     <Compile Include="Assets\Scripts\Factions\FactionManager.cs" />
+     <Compile Include="Assets\Scripts\Factions\FactionMember.cs" />
+     <Compile Include="Assets\Scripts\Factions\FactionType.cs" />
+     <Compile Include="Assets\Scripts\Factions\PlayerFaction.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GameUIManager.cs" />
+     <Compile Include="Assets\Scripts\GlobalManager.cs" />
+     <Compile Include="Assets\Scripts\HasLoot.cs" />
+     <Compile Include="Assets\Scripts\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\IHasSpeed.cs" />
+     <Compile Include="Assets\Scripts\ImprovedPolygonCollider2D.cs" />
+     <Compile Include="Assets\Scripts\MenuManager.cs" />
+     <Compile Include="Assets\Scripts\ObjectManager.cs" />
+     <Compile Include="Assets\Scripts\ParticleSystemHelper.cs" />
+     <Compile Include="Assets\Scripts\PathFollower.cs" />
+     <Compile Include="Assets\Scripts\PlayerGameState.cs" />
+     <Compile Include="Assets\Scripts\ProjectileCollisionTrigger2D.cs" />
+     <Compile Include="Assets\Scripts\Questions\QuestionSet.cs" />
+     <Compile Include="Assets\Scripts\Questions\QuizAnswerButton.cs" />
+     <Compile Include="Assets\Scripts\Questions\QuizDialog.cs" />
+     <Compile Include="Assets\Scripts\Questions\QuizQuestion.cs" />
+     <Compile Include="Assets\Scripts\RepeatSceneButton.cs" />
+     <Compile Include="Assets\Scripts\RequireLevel.cs" />
+     <Compile Include="Assets\Scripts\Selectable.cs" />
+     <Compile Include="Assets\Scripts\Serialization\SerializationHelper.cs" />
+     <Compile Include="Assets\Scripts\SortHelper.cs" />
+     <Compile Include="Assets\Scripts\Spells\Aura.cs" />
+     <Compile Include="Assets\Scripts\Spells\AuraEffectHandler.cs" />
+     <Compile Include="Assets\Scripts\Spells\AuraEffects\Stun.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellCast.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellCastContext.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellCaster.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellCasterAI.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellData\AuraEffect.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellData\AuraEffectCollection.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellData\AuraTemplate.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellData\CastPhaseTemplate.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellData\ImpactPhaseTemplate.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellData\ProjectilePhaseTemplate.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellData\Spell.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellData\SpellEffect.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellData\SpellEffectCollection.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellData\SpellPhaseTemplate.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellData\SpellTargetSettings.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellEffects\DamageEffect.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellManager.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellPhase.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellPhaseContext.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellTargetCollection.cs" />
+     <Compile Include="Assets\Scripts\Spells\TargetCollectors\CasterCollector.cs" />
+     <Compile Include="Assets\Scripts\Spells\TargetCollectors\CasterSelectedPositionCollector.cs" />
+     <Compile Include="Assets\Scripts\Spells\TargetCollectors\CasterSelectedUnitCollector.cs" />
+     <Compile Include="Assets\Scripts\Spells\TargetCollectors\ContextOwnerCollector.cs" />
+     <Compile Include="Assets\Scripts\Spells\TargetCollectors\UnitsAroundContextOwner2DCollector.cs" />
+     <Compile Include="Assets\Scripts\Spells\TargetFilters\FriendlyFilter.cs" />
+     <Compile Include="Assets\Scripts\Spells\TargetFilters\HostileFilter.cs" />
+     <Compile Include="Assets\Scripts\SpriteRepeater.cs" />
+     <Compile Include="Assets\Scripts\StatsMenu.cs" />
+     <Compile Include="Assets\Scripts\StatsMenuData.cs" />
+     <Compile Include="Assets\Scripts\StickToTarget.cs" />
+     <Compile Include="Assets\Scripts\SwitchSceneButton.cs" />
+     <Compile Include="Assets\Scripts\Tower.cs" />
+     <Compile Include="Assets\Scripts\TowerPlatform.cs" />
+     <Compile Include="Assets\Scripts\Unit.cs" />
+     <Compile Include="Assets\Scripts\UnitManager.cs" />
+     <Compile Include="Assets\Scripts\UnitSpawnAI.cs" />
+     <Compile Include="Assets\Scripts\Util\CoroutineUtility.cs" />
+     <Compile Include="Assets\Scripts\Util\Extensions.cs" />
+     <Compile Include="Assets\Scripts\Util\SceneUtility.cs" />
+     <Compile Include="Assets\Scripts\Util\ScriptableObjectUtil.cs" />
+     <Compile Include="Assets\Scripts\Util\TouchCameraController.cs" />
+     <Compile Include="Assets\Scripts\Wave.cs" />
+     <Compile Include="Assets\Scripts\WaveGenerator.cs" />
+     <Compile Include="Assets\Scripts\WavePath.cs" />
+     <Compile Include="Assets\Scripts\WavePathEditor.cs" />
+     <Compile Include="Assets\Scripts\WaveTemplate.cs" />
+     <Compile Include="Assets\TTT.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
